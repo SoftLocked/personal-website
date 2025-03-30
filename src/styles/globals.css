@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-blue-50);
+  --foreground: var(--color-gray-800);
 }
 
 @theme inline {
@@ -12,15 +12,43 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-blue-900);
+    --foreground: #0a0a0c;
   }
 }
+*/
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.blue-text {
+  color: var(--color-blue-500);
+}
+
+.custom-shape-divider-bottom-1743325115 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1743325115 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 133px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1743325115 .shape-fill {
+  fill: oklch(0.882 0.059 254.128);
 }
