@@ -31,24 +31,58 @@ body {
   color: var(--color-blue-500);
 }
 
-.custom-shape-divider-bottom-1743325115 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+.custom-shape-divider-bottom-1743409189 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
-.custom-shape-divider-bottom-1743325115 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 133px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1743325115 .shape-fill {
+.custom-shape-divider-bottom-1743409189 .shape-fill {
   fill: oklch(0.882 0.059 254.128);
+}
+
+
+
+
+
+.custom-shape-divider-bottom-1743408918 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1743408918 .shape-fill {
+    fill: oklch(0.809 0.105 251.813);
+}
+
+
+
+
+
+.custom-shape-divider-bottom-1743409567 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1743409567 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1743409567 .shape-fill {
+    fill: oklch(0.707 0.165 254.624);
 }

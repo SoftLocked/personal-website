@@ -48,7 +48,7 @@ export default function SideNav() {
       {/* Show Menu Icon Button for Mobile */}
       {isMobile && (
         <IconButton
-          className="fixed top-4 left-4 z-50"
+          className="fixed top-4 left-4 z-50 z-1"
           onClick={toggleDrawer(true)}
         >
           <MenuIcon className="text-gray-800" />
@@ -62,7 +62,7 @@ export default function SideNav() {
         onClose={toggleDrawer(false)}
         className="md:hidden"
       >
-        <div className="w-46 bg-blue-200 h-full">
+        <div className="w-46 bg-blue-200 h-full z-1">
           <List>
             {navLinks.map((item, index) => (
               <Link href={item.href} key={index} passHref>
@@ -82,7 +82,7 @@ export default function SideNav() {
 
       {/* Persistent Sidebar for Desktop */}
       {!isMobile && (
-        <div className="hidden md:flex md:flex-col w-40 h-screen bg-transparent fixed md:justify-center">
+        <div className="hidden md:flex md:flex-col w-40 h-screen bg-transparent fixed md:justify-center z-1">
           <List className="">
             {navLinks.map((item, index) => (
               <Link href={item.href} key={index} passHref>
