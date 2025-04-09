@@ -66,7 +66,6 @@ export default function SideNav() {
             {navLinks.map((item, index) => (
               <Link href={item.href} key={index} passHref>
                 <ListItem
-                  button
                   className="hover:bg-blue-100"
                   onClick={toggleDrawer(false)}
                 >
@@ -85,7 +84,7 @@ export default function SideNav() {
           <List className="">
             {navLinks.map((item, index) => (
               <Link href={item.href} key={index} passHref>
-                <ListItem button className="">
+                <ListItem className="">
                   <ListItemIcon className="">{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItem>
