@@ -32,7 +32,7 @@ export default function Home() {
       </Box>
 
       {/* Projects */}
-      <Box className="min-w-screen min-h-screen flex flex-col bg-blue-200 relative px-5">
+      <Box className="min-w-screen min-h-screen flex flex-col bg-blue-200 relative px-5 pb-[200px]">
         <Projects/>
       </Box>
 
@@ -43,12 +43,15 @@ export default function Home() {
 
       
       {/* Skills */}
+      {/*
       <Box className="min-w-screen min-h-screen flex flex-col bg-blue-400 relative px-5">
         <Skills/>
       </Box>
+      */
+      }
 
       {/* Footer */}
-      <Box className="min-w-screen min-h-[25vh] flex flex-col bg-blue-700 px-5"></Box>
+      <Box className="min-w-screen min-h-[25vh] flex flex-col bg-blue-400 px-5"></Box>
 
       {/* Secret */}
       {showMore ? <Box className="w-screen min-h-[10vh] flex flex-col bg-black items-center justify-center text-center px-5">
