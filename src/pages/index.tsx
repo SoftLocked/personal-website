@@ -7,6 +7,7 @@ import Landing from "@/components/landing";
 import Projects from "@/components/projects";
 import Education from "@/components/education";
 import Skills from "@/components/skills";
+import Footer from "@/components/footer";
 
 export default function Home() {
   
@@ -27,17 +28,17 @@ export default function Home() {
       <SideNav></SideNav>
 
       {/* Landing */}
-      <Box className="min-w-screen min-h-[90vh] flex flex-col items-center justify-center text-center relative px-5">
+      <Box id="landing" className="min-w-screen min-h-[90vh] flex flex-col items-center justify-center text-center relative px-5">
         <Landing/>
       </Box>
 
       {/* Projects */}
-      <Box className="min-w-screen min-h-screen flex flex-col bg-blue-200 relative px-5 pb-[200px]">
+      <Box id="projects" className="min-w-screen min-h-screen flex flex-col bg-blue-200 relative px-5 pb-[200px]">
         <Projects/>
       </Box>
 
       {/* Education */}
-      <Box className="min-w-screen min-h-[90vh] bg-blue-300 relative pb-25 px-5">
+      <Box id="education" className="min-w-screen min-h-[90vh] bg-blue-300 relative pb-25 px-5">
         <Education/>
       </Box>
 
@@ -51,11 +52,13 @@ export default function Home() {
       }
 
       {/* Footer */}
-      <Box className="min-w-screen min-h-[25vh] flex flex-col bg-blue-400 px-5"></Box>
+      <Box id="footer" className="min-w-screen min-h-[35vh] lg:min-h-[15vh] flex bg-blue-700 text-white relative justify-center">
+        <Footer/>
+      </Box>
 
       {/* Secret */}
       {showMore ? <Box className="w-screen min-h-[10vh] flex flex-col bg-black items-center justify-center text-center px-5">
-        <Typography variant="h5" style={{fontWeight: 700, color: 'white'}}>There's a million thing I haven't done. But just you wait...</Typography>
+        <Typography variant="h5" style={{fontWeight: 700, color: 'white'}} className="py-5">There's a million thing I haven't done. But just you wait...</Typography>
       </Box> : <></>}
 
 

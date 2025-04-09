@@ -31,16 +31,15 @@ export default function SideNav() {
   }, []);
 
   // Toggle Drawer for mobile
-  const toggleDrawer = (open) => () => {
+  const toggleDrawer = (open:any) => () => {
     setOpen(open);
   };
 
   // Navigation Links
   const navLinks = [
-    { text: "Home", href: "/", icon: <HomeIcon /> },
-    { text: "Education", href: "/", icon: <InfoIcon /> },
-    { text: "Projects", href: "/", icon: <ContactMailIcon /> },
-    { text: "Contact", href: "/", icon: <HomeIcon /> },
+    { text: "Home", href: "#landing", icon: <HomeIcon /> },
+    { text: "Projects", href: "#projects", icon: <ContactMailIcon /> },
+    { text: "Education", href: "#education", icon: <InfoIcon /> }
   ];
 
   return (

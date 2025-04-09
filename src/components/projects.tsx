@@ -106,15 +106,11 @@ const Projects = () => {
 
     return ( 
         <React.Fragment>
-            <div className="flex justify-center text-center">
+            <div className="flex flex-col justify-center text-center">
                 <Typography sx={{ typography: { md: 'h1', sm: 'h2', xs: 'h3' } }} style={{fontWeight: 700}}>Projects</Typography>
+                <Typography sx={{ typography: { md: 'h3', sm: 'h4', xs: 'h5' } }} style={{fontWeight: 600}}>A bit of what I've been up to lately</Typography>
             </div>
-            <div className="flex justify-center items-center flex-col">
-                <div className="xs:columns-1 sm:columns-2 md:columns-3">
-                    <div></div>
-                </div>
-            </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[75vw]">
                     {projects.map((project, index) => (
                         <div className="col_span-1">

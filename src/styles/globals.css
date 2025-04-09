@@ -84,5 +84,5 @@ body {
 }
 
 .custom-shape-divider-bottom-1743409567 .shape-fill {
-    fill: oklch(0.707 0.165 254.624);
+    fill: var(--color-blue-700);
 }

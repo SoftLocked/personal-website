@@ -28,14 +28,16 @@ const Education = () => {
         },
         {
             company:"UC Irvine", title:"Research Assistant", timeframe:"Jan 2025 - Present",
-            description:``
+            description:`
+            Studying metacognition and the impact of active journaling on the problem-solving skills of computer science students learning a new concept in randomized algorithms.`
         }
     ];
 
     return (
         <React.Fragment>
-            <div className="flex justify-center text-center pt-20 pb-10 ml-12">
+            <div className="flex flex-col justify-center text-center pt-20 pb-10 ml-11">
                 <Typography sx={{ typography: { md: 'h1', sm: 'h2', xs: 'h3' } }} style={{fontWeight: 700}}>Education <span className="text-blue-500">&</span> Experience</Typography>
+                <Typography sx={{ typography: { md: 'h3', sm: 'h4', xs: 'h5' } }} style={{fontWeight: 600}}>Some of the work I've been doing</Typography>
             </div>
             <div className="flex justify-center">
                 <div className="grid grid-cols-1 xl:grid-cols-2 w-[75vw]">
