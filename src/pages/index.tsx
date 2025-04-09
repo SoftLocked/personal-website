@@ -6,7 +6,6 @@ import useScrollBottom from "@/hooks/useScrollBottom";
 import Landing from "@/components/landing";
 import Projects from "@/components/projects";
 import Education from "@/components/education";
-import Skills from "@/components/skills";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -42,15 +41,6 @@ export default function Home() {
         <Education/>
       </Box>
 
-      
-      {/* Skills */}
-      {/*
-      <Box className="min-w-screen min-h-screen flex flex-col bg-blue-400 relative px-5">
-        <Skills/>
-      </Box>
-      */
-      }
-
       {/* Footer */}
       <Box id="footer" className="min-w-screen min-h-[35vh] lg:min-h-[15vh] flex bg-blue-700 text-white relative justify-center">
         <Footer/>
@@ -58,7 +48,7 @@ export default function Home() {
 
       {/* Secret */}
       {showMore ? <Box className="w-screen min-h-[10vh] flex flex-col bg-black items-center justify-center text-center px-5">
-        <Typography variant="h5" style={{fontWeight: 700, color: 'white'}} className="py-5">There's a million thing I haven't done. But just you wait...</Typography>
+        <Typography variant="h5" style={{fontWeight: 700, color: 'white'}} className="py-5">There&apos;s a million thing I haven&apos;t done. But just you wait...</Typography>
       </Box> : <></>}
 
 

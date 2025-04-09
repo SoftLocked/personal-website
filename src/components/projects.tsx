@@ -108,12 +108,12 @@ const Projects = () => {
         <React.Fragment>
             <div className="flex flex-col justify-center text-center">
                 <Typography sx={{ typography: { md: 'h1', sm: 'h2', xs: 'h3' } }} style={{fontWeight: 700}}>Projects</Typography>
-                <Typography sx={{ typography: { md: 'h3', sm: 'h4', xs: 'h5' } }} style={{fontWeight: 600}}>A bit of what I've been up to lately</Typography>
+                <Typography sx={{ typography: { md: 'h3', sm: 'h4', xs: 'h5' } }} style={{fontWeight: 600}}>A bit of what I&apos;ve been up to lately</Typography>
             </div>
             <div className="flex justify-center mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[75vw]">
                     {projects.map((project, index) => (
-                        <div className="col_span-1">
+                        <div key={index} className="col_span-1">
                             <ProjectCard title={project.title} year={project.year} description={project.description} link={project.link} skills={project.skills}/>
                         </div>
                     ))}

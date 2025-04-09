@@ -2,41 +2,6 @@ import { Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 
 const Landing = () => {
-    
-    const restOfName = "krishnaVardhineedi";
-    const [name, setName] = useState('');
-    const [count, setCount] = useState(0);
-    const [blinker, setBlinker] = useState(true);
-
-    useEffect(() => {
-        let nameWriteID = setTimeout(function() {
-          if (count >= restOfName.length-1) {
-            clearTimeout(nameWriteID);
-          } else {
-            setCount(prev => prev + 1);
-          }
-          if (restOfName[count] === 'a' && restOfName[count+1] === 'V') {
-            setName(prev => prev + restOfName[count] + ' ');
-          } else {
-            setName(prev => prev + restOfName[count]);
-          }    
-        }, 75);
-    
-        return () => {
-          clearTimeout(nameWriteID);
-        };
-      }, [count]);
-    
-      useEffect(() => {
-        let blinkerID = setTimeout(function() {
-            setBlinker(prev => !prev);     
-        }, 500);
-    
-        return () => {
-          clearTimeout(blinkerID);
-        };
-      }, [blinker]);
-
     return ( 
         <React.Fragment>
 

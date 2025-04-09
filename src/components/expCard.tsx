@@ -1,7 +1,13 @@
 import { Typography } from "@mui/material";
 
-const ExpCard = (props:any) => {
-    const {company, title, timeframe, description} = props;
+interface MyComponentProps {
+    company: string;
+    title: string;
+    timeframe: string;
+    description: string;
+}
+
+const ExpCard: React.FC<MyComponentProps> = ({company, title, timeframe, description}) => {
     return ( 
         <div className="p-5 m-2 rounded-3xl transition duration-100 ease-in-out hover:bg-blue-200">
             <Typography  sx={{ typography: { xl: 'h3', lg: 'h4', xs: 'h3' } }} style={{fontWeight: 700}}>{title}</Typography>

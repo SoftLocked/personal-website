@@ -6,7 +6,7 @@ interface MyComponentProps {
     description: string;
     link: string;
     skills: string[];
-  }
+}
 
 const ProjectCard: React.FC<MyComponentProps> = ({title, year, description, link, skills}) => {
     return ( 

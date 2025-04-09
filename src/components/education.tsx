@@ -1,4 +1,4 @@
-import { Card, CardActions, CardContent, CardHeader, CardMedia, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
 import ExpCard from "./expCard";
 
@@ -37,17 +37,17 @@ const Education = () => {
         <React.Fragment>
             <div className="flex flex-col justify-center text-center pt-20 pb-10 ml-11">
                 <Typography sx={{ typography: { md: 'h1', sm: 'h2', xs: 'h3' } }} style={{fontWeight: 700}}>Education <span className="text-blue-500">&</span> Experience</Typography>
-                <Typography sx={{ typography: { md: 'h3', sm: 'h4', xs: 'h5' } }} style={{fontWeight: 600}}>Some of the work I've been doing</Typography>
+                <Typography sx={{ typography: { md: 'h3', sm: 'h4', xs: 'h5' } }} style={{fontWeight: 600}}>Some of the work I&apos;ve been doing</Typography>
             </div>
             <div className="flex justify-center">
                 <div className="grid grid-cols-1 xl:grid-cols-2 w-[75vw]">
                     {experiences.map((item, index) => (
-                        <ExpCard company={item.company} title={item.title} timeframe={item.timeframe} description={item.description}/>
+                        <ExpCard key={index} company={item.company} title={item.title} timeframe={item.timeframe} description={item.description}/>
                     ))}
                 </div>
                 
             </div>
-            {
+
             <div className="custom-shape-divider-bottom-1743409567">
                 <svg
                     data-name="Layer 1"
@@ -61,7 +61,6 @@ const Education = () => {
                     ></path>
                 </svg>
             </div>
-            }
         </React.Fragment>
     );
 };

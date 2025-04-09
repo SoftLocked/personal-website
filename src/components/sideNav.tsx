@@ -31,7 +31,7 @@ export default function SideNav() {
   }, []);
 
   // Toggle Drawer for mobile
-  const toggleDrawer = (open:any) => () => {
+  const toggleDrawer = (open:boolean) => () => {
     setOpen(open);
   };
 
