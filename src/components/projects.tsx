@@ -2,10 +2,20 @@ import { Typography } from "@mui/material";
 import React from "react";
 
 const Projects = () => {
+
+    const projects = [
+        {}, {}, {}
+    ];
+
     return ( 
         <React.Fragment>
-            <div className="flex justify-center">
-                <Typography variant="h1" style={{fontWeight: 700}}>Projects</Typography>
+            <div className="flex justify-center text-center">
+                <Typography sx={{ typography: { md: 'h1', sm: 'h2', xs: 'h3' } }} style={{fontWeight: 700}}>Projects</Typography>
+            </div>
+            <div className="flex justify-center items-center flex-col">
+                <div className="xs:columns-1 sm:columns-2 md:columns-3">
+                    <div></div>
+                </div>
             </div>
             <div className="custom-shape-divider-bottom-1743408918">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
