@@ -8,7 +8,7 @@ const Education = () => {
 
     const experiences = [
         {
-            company:"UC Irvine", title:"B.S. Computer Science", timeframe:"Sep 2022 - Dec 2025",
+            company:"UC Irvine", title:"B.S. Computer Science", timeframe:"Sep 2022 - Present",
             description:`
                 Specialized in Algorithms. Took courses in Systems, Architecture, Database, Information Retrieval, Machine Learning, Quantum Computing, Complexity, Data Structures, Algorithms, and many more.`
         },
@@ -35,7 +35,7 @@ const Education = () => {
 
     return (
         <React.Fragment>
-            <div className="flex flex-col justify-center text-center pt-20 pb-10 ml-11">
+            <div className="flex flex-col justify-center text-center pt-20 pb-10 lg:ml-11">
                 <Typography sx={{ typography: { md: 'h1', sm: 'h2', xs: 'h3' } }} style={{fontWeight: 700}}>Education <span className="text-blue-500">&</span> Experience</Typography>
                 <Typography sx={{ typography: { md: 'h3', sm: 'h4', xs: 'h5' } }} style={{fontWeight: 600}}>Some of the work I&apos;ve been doing</Typography>
             </div>

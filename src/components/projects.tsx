@@ -5,17 +5,24 @@ import ProjectCard from "./projectCard";
 const Projects = () => {
     const projects = [
         {
-            title: "Quantumpy",
+            title: "Overboard",
+            year: 2025,
+            description: "🥇2025 UCI Datathon First Place! ($600 team earnings)\nShipwreck data collection and analysis to determine the existence of a shipwreck with high accuracy based on a coordinate input.",
+            link: "https://devpost.com/software/overboard-o09dem?_gl=1*19xl9l8*_gcl_au*MjA5OTgwNDAxNS4xNzQ0NDA2OTUw*_ga*ODYxOTM0MjU0LjE3NDQ0MDY5NTA.*_ga_0YHJK3Y10M*MTc0NDgyNDM3OS4xMi4xLjE3NDQ4MjUzNDQuMC4wLjA.",
+            skills: ["R", "Numpy", "Pandas", "Geopandas", "Plotly"]
+        },
+        {
+            title: "QuPyt",
             year: 2025,
             description: "Python package to emulate and visualize quantum computations with a classical computer.",
-            link: "https://github.com/SoftLocked/qupy",
+            link: "https://pypi.org/project/qupyt/",
             skills: ["Python", "Numpy", "Matplotlib"]
         },
         {
             title: "Hottake Ranked",
             year: 2025,
             description: "Web application to make custom hot takes and allow users to rank them against each other.",
-            link: "https://github.com/SoftLocked/HottakeRanked",
+            link: "https://hottake-ranked.harivardhineedi.com/",
             skills: ["Next.js", "Firebase", "Firestore"]
         },
         {
@@ -113,9 +120,9 @@ const Projects = () => {
             <div className="flex justify-center mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[75vw]">
                     {projects.map((project, index) => (
-                        <div key={index} className="col_span-1">
-                            <ProjectCard title={project.title} year={project.year} description={project.description} link={project.link} skills={project.skills}/>
-                        </div>
+                        <a key={index} href={project.link} target="_blank" className="col_span-1 rounded-2xl transition duration-100 ease-in-out hover:bg-blue-100">
+                            <ProjectCard title={project.title} year={project.year} description={project.description} skills={project.skills}/>
+                        </a>
                     ))}
                 </div>
             </div>

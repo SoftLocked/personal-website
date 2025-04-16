@@ -2,7 +2,8 @@ import React from "react";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
-import { Typography } from "@mui/material";
+import DescriptionIcon from '@mui/icons-material/Description';
+import { Tooltip, Typography } from "@mui/material";
 
 const Footer = () => {
     return ( 
@@ -22,9 +23,18 @@ const Footer = () => {
                     <Typography sx={{ typography: { xs:'body1' } }} style={{fontWeight: 300}}>Developed with Next.js and Tailwind CSS. Deployed on Vercel.</Typography>
                 </div>
                 <div className="text-right">
-                    <a href="https://www.linkedin.com/in/hvardhin/" target="_blank"><LinkedInIcon sx={{fontSize: 30}} className="ml-2 transition duration-100 ease-in-out hover:text-blue-400"/></a>
-                    <a href="https://github.com/SoftLocked" target="_blank"><GitHubIcon   sx={{fontSize: 30}} className="ml-2 transition duration-100 ease-in-out hover:text-blue-400"/></a>
-                    <a href="mailto:harivardhineedi@gmail.com"><EmailIcon    sx={{fontSize: 30}} className="ml-2 transition duration-100 ease-in-out hover:text-blue-400"/></a>
+                    <Tooltip title="LinkedIn" arrow>
+                        <a href="https://www.linkedin.com/in/hvardhin/" target="_blank"><LinkedInIcon sx={{fontSize: 30}} className="ml-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
+                    </Tooltip>
+                    <Tooltip title="GitHub" arrow>
+                    <a href="https://github.com/SoftLocked" target="_blank"><GitHubIcon   sx={{fontSize: 30}} className="ml-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
+                    </Tooltip>
+                    <Tooltip title="E-Mail" arrow>
+                    <a href="mailto:harivardhineedi@gmail.com"><EmailIcon    sx={{fontSize: 30}} className="ml-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
+                    </Tooltip>
+                    <Tooltip title="Resume" arrow>
+                    <a href="mailto:harivardhineedi@gmail.com"><DescriptionIcon    sx={{fontSize: 30}} className="ml-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
+                    </Tooltip>
                 </div>
             </div>
         </React.Fragment>

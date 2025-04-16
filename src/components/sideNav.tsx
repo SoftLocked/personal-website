@@ -39,7 +39,7 @@ export default function SideNav() {
   const navLinks = [
     { text: "Home", href: "#landing", icon: <HomeIcon /> },
     { text: "Projects", href: "#projects", icon: <ContactMailIcon /> },
-    { text: "Education", href: "#education", icon: <InfoIcon /> }
+    { text: "Experience", href: "#experience", icon: <InfoIcon /> }
   ];
 
   return (
@@ -50,7 +50,7 @@ export default function SideNav() {
           className="fixed top-4 left-4 z-50 z-1"
           onClick={toggleDrawer(true)}
         >
-          <MenuIcon className="text-gray-800" />
+          <MenuIcon className="text-neutral-800" />
         </IconButton>
       )}
 
@@ -84,8 +84,8 @@ export default function SideNav() {
           <List className="">
             {navLinks.map((item, index) => (
               <Link href={item.href} key={index} passHref>
-                <ListItem className="">
-                  <ListItemIcon className="">{item.icon}</ListItemIcon>
+                <ListItem className="hover:text-blue-500 rounded-full">
+                  <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItem>
               </Link>
