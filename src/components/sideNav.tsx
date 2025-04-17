@@ -21,7 +21,7 @@ export default function SideNav() {
   // Check screen width for responsive behavior
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Mobile if < 768px
+      setIsMobile(window.innerWidth < 1280); // Mobile if < 768px
     };
 
     handleResize(); // Initial check
@@ -59,7 +59,7 @@ export default function SideNav() {
         anchor="left"
         open={open}
         onClose={toggleDrawer(false)}
-        className="md:hidden"
+        className="xl:hidden"
       >
         <div className="w-46 bg-blue-200 h-full z-1">
           <List>
