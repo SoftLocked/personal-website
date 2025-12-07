@@ -4,10 +4,7 @@ import React, { useEffect, useState } from "react";
 import useScrollBottom from "@/hooks/useScrollBottom";
 
 import Landing from "@/components/landing";
-import Projects from "@/components/currentWork";
 import Footer from "@/components/footer";
-import UpdateBanner from "@/components/updateBanner";
-import Research from "@/components/research";
 import About from "@/components/about";
 import Current from "@/components/currentWork";
 import Teaching from "@/components/teaching";

@@ -11,26 +11,28 @@ const Current = () => {
             </div>
 
             <div className="flex justify-center">
-                            <div className="flex flex-col justify-center sm:w-[75vw] mt-10">
-                                <div className="grid grid-cols-2 gap-10">
-                                    <div className="col-span-2 xl:col-span-1">
-                                        <Typography sx={{ typography: { md: 'h5', sm: 'h5', xs: 'h6' } }}>Working with Dr. Shion Fukuzawa, I'm investigating how coordination structure in quantum tasks determines which types of entanglement succeed. My framework analyzes quantum nonlocal games to extract coordination signatures (whether games rely on pairwise interactions, triple interactions, or mixed patterns) and uses these signatures to predict optimal entanglement types.</Typography>
-            
-                                        <Typography sx={{ typography: { md: 'h5', sm: 'h5', xs: 'h6' }, marginTop: 5 }}>Prelminary tests across 953 three-qubit games reveals a highly convincing separation. GHZ states achieve optimal performance in 95.8% of games with pairwise coordination structure (503 of 525 games), while W states succeed in 98.3% of games requiring triple or mixed coordination (421 of 428 games). We're now extending this work toward a general classification framework and exploring robustness under realistic noise conditions.</Typography>
+                <div className="flex flex-col justify-center sm:w-[75vw] mt-10">
+                    <div className="grid grid-cols-2 gap-10">
+                        <div className="col-span-2 xl:col-span-1">
+                            <Typography sx={{ typography: { md: 'h5', sm: 'h5', xs: 'h6' } }}>Working with Dr. Shion Fukuzawa, I'm investigating how coordination structure in quantum tasks determines which types of entanglement succeed. My framework analyzes quantum nonlocal games to extract coordination signatures (whether games rely on pairwise interactions, triple interactions, or mixed patterns) and uses these signatures to predict optimal entanglement types.</Typography>
 
-                                        <Typography sx={{ typography: { md: 'h5', sm: 'h5', xs: 'h6' }, marginTop: 5 }}>The figures on the right show visual clusters of regimes and strategies on all 953 games plotted by pairwise and triple energy. The clusters for regimes strongly correlate with the clusters for strategies. </Typography>
-                                    </div>
-                                    <div className="col-span-2 xl:col-span-1">
-                                        <div className="flex justify-center ">
-                                            <img src="strategy.png" className="rounded-[20px] mb-10 w-[30em]"></img>
-                                        </div>
-                                        <div className="flex justify-center">
-                                            <img src="regime.png" className="rounded-[20px] mb-10 w-[30em]"></img>
-                                        </div>
-                                    </div>
-                                </div>
+                            <Typography sx={{ typography: { md: 'h5', sm: 'h5', xs: 'h6' }, marginTop: 5 }}>Prelminary tests across 953 three-qubit games reveals a highly convincing separation. GHZ states achieve optimal performance in 95.8% of games with pairwise coordination structure (503 of 525 games), while W states succeed in 98.3% of games requiring triple or mixed coordination (421 of 428 games). We're now extending this work toward a general classification framework and exploring robustness under realistic noise conditions.</Typography>
+
+                            <Typography sx={{ typography: { md: 'h5', sm: 'h5', xs: 'h6' }, marginTop: 5 }}>The figures on the right show visual clusters of regimes and strategies on all 953 games plotted by pairwise and triple energy. The clusters for regimes strongly correlate with the clusters for strategies. </Typography>
+                        </div>
+                        <div className="col-span-2 xl:col-span-1">
+                            <div className="flex flex-col items-center mb-10">
+                                <img src="strategy.png" className="rounded-[20px] mb-3 w-[30em]"></img>
+                                <Typography sx={{ typography: { md: 'h6', sm: 'h6', xs: 'h6' }}}>Correlation clusters for GHZ vs W winning strategies.</Typography>
+                            </div>
+                            <div className="flex flex-col items-center">
+                                <img src="regime.png" className="rounded-[20px] mb-3 w-[30em]"></img>
+                                <Typography sx={{ typography: { md: 'h6', sm: 'h6', xs: 'h6' }}}>Graph of correlation regime clusters.</Typography>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
 
             <div className="custom-shape-divider-bottom-1765069962">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

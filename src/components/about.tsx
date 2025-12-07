@@ -9,7 +9,7 @@ const About = () => {
     
     return (
         <React.Fragment>
-            <div className="flex justify-center pt-10 sm:pt-0">
+            <div className="flex justify-center text-center pt-10 sm:pt-0">
                 <Typography sx={{ typography: { md: 'h1', sm: 'h2', xs: 'h3' } }} style={{fontWeight: 700}}>About Me</Typography>
             </div>
             <div className="flex justify-center">
@@ -23,7 +23,7 @@ const About = () => {
 
                     <Typography sx={{ typography: { md: 'h5', sm: 'h5', xs: 'h6' }, marginTop: 5 }}>I'm currently a 4th year undergraduate computer science major at UC Irvine. It is here where I've had the fortune of discovering a passion for quantum computing and theoretical computer science. I'm currently applying to CS Ph.D. programs in quantum information theory.</Typography>
 
-                    <Typography sx={{ typography: { md: 'h5', sm: 'h5', xs: 'h6' }, marginTop: 5 }}>Outside of academics, I'm an avid hobbyist. I'm 1300 rapid Elo on chess.com, I've drawn promotional art for UCI clubs such as EVGE, I crochet small trinkets, I play recreational badminton, and I (poorly) play piano.</Typography>
+                    <Typography sx={{ typography: { md: 'h5', sm: 'h5', xs: 'h6' }, marginTop: 5 }}>Outside of academics, I'm an avid hobbyist. I'm 1300 rapid Elo on chess.com, I've drawn promotional art for UCI clubs such as Euphonic Video Game Ensemble, I crochet small trinkets, play recreational badminton, poorly play piano, and love indie video games (I've been playing a lot of Hollow Knight: Silksong lately)</Typography>
                 </div>
             </div>
         

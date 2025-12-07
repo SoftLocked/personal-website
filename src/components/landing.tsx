@@ -27,12 +27,13 @@ const Landing = () => {
                         <Tooltip title="GitHub" arrow>
                         <a href="https://github.com/SoftLocked" target="_blank"><GitHubIcon className="!w-8 !h-8 md:!w-12 md:!h-12 mx-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
                         </Tooltip>
+                        <Tooltip title="CV" arrow>
+                        <a href="curriculum_vitae.pdf" target="_blank"><DescriptionIcon className="!w-8 !h-8 md:!w-12 md:!h-12 mx-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
+                        </Tooltip>
                         <Tooltip title="E-Mail" arrow>
                         <a href="mailto:harivardhineedi@gmail.com"><EmailIcon className="!w-8 !h-8 md:!w-12 md:!h-12 mx-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
                         </Tooltip>
-                        <Tooltip title="Resume" arrow>
-                        <a href="mailto:harivardhineedi@gmail.com"><DescriptionIcon className="!w-8 !h-8 md:!w-12 md:!h-12 mx-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
-                        </Tooltip>
+                        
                     </div>
                 </div>
             </div>
