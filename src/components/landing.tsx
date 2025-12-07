@@ -8,7 +8,7 @@ import React from "react";
 const Landing = () => {
     return ( 
         <React.Fragment>
-            <div className="grid grid-cols-1 lg:grid-cols-4 w-[75vw] gap-10 content-center">
+            <div className="grid grid-cols-1 lg:grid-cols-4 w-[75vw] mb-10 gap-10 content-center">
                 <div className="flex items-center">
                     <img src="hari.jpg" className="rounded-[50px] mb-10 w-[15em] lg:w-[20em] aspect-square"></img>
                 </div>

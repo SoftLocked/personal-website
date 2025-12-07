@@ -4,11 +4,13 @@ import React, { useEffect, useState } from "react";
 import useScrollBottom from "@/hooks/useScrollBottom";
 
 import Landing from "@/components/landing";
-import Projects from "@/components/projects";
+import Projects from "@/components/currentWork";
 import Footer from "@/components/footer";
 import UpdateBanner from "@/components/updateBanner";
 import Research from "@/components/research";
 import About from "@/components/about";
+import Current from "@/components/currentWork";
+import Teaching from "@/components/teaching";
 
 export default function Home() {
   
@@ -37,16 +39,19 @@ export default function Home() {
       </Box>
 
       {/* About */}
-      <Box id="about" className="min-w-screen min-h-[60vh] bg-blue-200 relative pb-25 px-5">
+      <Box id="about" className="min-w-screen min-h-[100vh] bg-blue-200 relative pb-25 px-5">
         <About/>
       </Box>
 
-      {/* Projects */}
-      <Box id="projects" className="min-w-screen min-h-screen flex flex-col bg-blue-300 relative px-5 pb-[200px]">
-        <Projects/>
+      {/* Current Work */}
+      <Box id="current_work" className="min-w-screen min-h-screen flex flex-col bg-blue-300 relative px-5 pb-[200px]">
+        <Current/>
       </Box>
 
-      
+      {/* Current Work */}
+      <Box id="teaching" className="min-w-screen min-h-screen flex flex-col bg-blue-400 relative px-5 pb-[200px]">
+        <Teaching/>
+      </Box>
 
       {/* Footer */}
       <Box id="footer" className="min-w-screen min-h-[25vh] lg:min-h-[20vh] flex bg-blue-700 text-white relative justify-center">
