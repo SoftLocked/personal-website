@@ -9,10 +9,10 @@ import {
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
-import ContactMailIcon from "@mui/icons-material/ContactMail";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { Construction, School } from "@mui/icons-material";
 
 export default function SideNav() {
   const [open, setOpen] = useState(false);
@@ -38,8 +38,9 @@ export default function SideNav() {
   // Navigation Links
   const navLinks = [
     { text: "Home", href: "#landing", icon: <HomeIcon /> },
-    { text: "Projects", href: "#projects", icon: <ContactMailIcon /> },
-    { text: "Experience", href: "#experience", icon: <InfoIcon /> }
+    { text: "About", href: "#about", icon: <InfoIcon /> },
+    { text: "Current Work", href: "#current_work", icon: <Construction/> },
+    { text: "Teaching", href: "#teaching", icon: <School/> }
   ];
 
   return (

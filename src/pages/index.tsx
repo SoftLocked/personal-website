@@ -45,7 +45,7 @@ export default function Home() {
         <Current/>
       </Box>
 
-      {/* Current Work */}
+      {/* Teaching */}
       <Box id="teaching" className="min-w-screen min-h-screen flex flex-col bg-blue-400 relative px-5 pb-[200px]">
         <Teaching/>
       </Box>
