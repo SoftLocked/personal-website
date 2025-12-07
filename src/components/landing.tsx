@@ -8,26 +8,33 @@ import React from "react";
 const Landing = () => {
     return ( 
         <React.Fragment>
+            <div className="grid grid-cols-1 lg:grid-cols-4 w-[75vw] gap-10 content-center">
+                <div className="flex items-center">
+                    <img src="hari.jpg" className="rounded-[50px] mb-10 w-[15em] lg:w-[20em] aspect-square"></img>
+                </div>
 
-                
+                <div className="text-left col-span-3">
+                    <Typography sx={{ typography: { md: 'h1', sm: 'h2', xs: 'h3' } }} style={{fontWeight: 700}}><span className="text-blue-500">Hari</span>krishna Vardhineedi</Typography>
 
-            <Typography sx={{ typography: { md: 'h1', sm: 'h2', xs: 'h3' } }} style={{fontWeight: 700}}><span className="text-blue-500">Hari</span>krishna Vardhineedi</Typography>
+                    <Typography sx={{ typography: { md: 'h4', sm: 'h4', xs: 'h5' } }} style={{fontWeight: 700}}>Building Structural Principles for <span className="text-blue-500">Quantum Computing</span></Typography>
+                    
+                    <Typography sx={{ typography: { md: 'h5', sm: 'h5', xs: 'h6' } }} style={{fontWeight: 700}}>Applying to Fall 2026 CS Ph.D. Programs in Quantum Information</Typography>
 
-            <Typography sx={{ typography: { md: 'h4', sm: 'h4', xs: 'h5' } }} style={{fontWeight: 700}}>Student with a passion for <span className="text-blue-500">Full-Stack Development</span></Typography>
-            
-            <div className="pt-4 text-blue-500 flex justify-end">
-                <Tooltip title="LinkedIn" arrow>
-                    <a href="https://www.linkedin.com/in/hvardhin/" target="_blank"><LinkedInIcon className="!w-8 !h-8 md:!w-12 md:!h-12 mx-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
-                </Tooltip>
-                <Tooltip title="GitHub" arrow>
-                <a href="https://github.com/SoftLocked" target="_blank"><GitHubIcon className="!w-8 !h-8 md:!w-12 md:!h-12 mx-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
-                </Tooltip>
-                <Tooltip title="E-Mail" arrow>
-                <a href="mailto:harivardhineedi@gmail.com"><EmailIcon className="!w-8 !h-8 md:!w-12 md:!h-12 mx-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
-                </Tooltip>
-                <Tooltip title="Resume" arrow>
-                <a href="mailto:harivardhineedi@gmail.com"><DescriptionIcon className="!w-8 !h-8 md:!w-12 md:!h-12 mx-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
-                </Tooltip>
+                    <div className="pt-4 text-blue-500 flex">
+                        <Tooltip title="LinkedIn" arrow>
+                            <a href="https://www.linkedin.com/in/hvardhin/" target="_blank"><LinkedInIcon className="!w-8 !h-8 md:!w-12 md:!h-12 mr-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
+                        </Tooltip>
+                        <Tooltip title="GitHub" arrow>
+                        <a href="https://github.com/SoftLocked" target="_blank"><GitHubIcon className="!w-8 !h-8 md:!w-12 md:!h-12 mx-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
+                        </Tooltip>
+                        <Tooltip title="E-Mail" arrow>
+                        <a href="mailto:harivardhineedi@gmail.com"><EmailIcon className="!w-8 !h-8 md:!w-12 md:!h-12 mx-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
+                        </Tooltip>
+                        <Tooltip title="Resume" arrow>
+                        <a href="mailto:harivardhineedi@gmail.com"><DescriptionIcon className="!w-8 !h-8 md:!w-12 md:!h-12 mx-2 transition duration-100 ease-in-out hover:text-blue-300"/></a>
+                        </Tooltip>
+                    </div>
+                </div>
             </div>
             
             <div className="custom-shape-divider-bottom-1743409189">

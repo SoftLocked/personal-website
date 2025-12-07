@@ -4,28 +4,28 @@ import ExpCard from "./expCard";
 
 
 
-const Education = () => {
+const Research = () => {
 
     const experiences = [
-        {
+        /*{
             company:"UC Irvine", title:"B.S. Computer Science", timeframe:"Sep 2022 - Present",
             description:`
                 Specialized in Algorithms. Took courses in Systems, Architecture, Database, Information Retrieval, Machine Learning, Quantum Computing, Complexity, Data Structures, Algorithms, and many more.`
-        },
-        {
+        },*/
+        /*{
             company:"Pickaxe", title:"Software Engineer Intern", timeframe:"Jun 2023 - Aug 2023",
             description:`
             Engineered a generative AI-driven Twitter marketing automation tool within 6 weeks, streamlining company marketing.
             Integrated GPT-4, Twitter API, LangChain, and FastAPI, reducing tweeting time by 80% while maintaining engagement.
             Automated end-to-end testing with Python Unittest, ensuring robust, maintainable code with 99% test coverage.`
-        },
-        {
+        },*/
+        /*{
             company:"UC Irvine", title:"Teaching Assistant", timeframe:"Sep 2023 - Mar 2025",
             description:`
             Managed a 20-member teaching team using Agile Sprint Methodology, coordinating logistics for 600+ students per term.
             Automated exam logistics using Pandas, NumPy, and LaTeX, cutting logistic time by 50% and eliminating manual errors.
             Developed an ID-check system leveraging UCI Photo Roster API, Pandas, and LaTeX, reducing exam turn-in time by 80%.`
-        },
+        },*/
         {
             company:"UC Irvine", title:"Research Assistant", timeframe:"Jan 2025 - Present",
             description:`
@@ -48,21 +48,13 @@ const Education = () => {
                 
             </div>
 
-            <div className="custom-shape-divider-bottom-1743409567">
-                <svg
-                    data-name="Layer 1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1200 120"
-                    preserveAspectRatio="none"
-                >
-                    <path
-                        d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-                        className="shape-fill"
-                    ></path>
-                </svg>
-            </div>
+            <div className="custom-shape-divider-bottom-1743408918">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" className="shape-fill"></path>
+                            </svg>
+                        </div>
         </React.Fragment>
     );
 };
 
-export default Education;
+export default Research;

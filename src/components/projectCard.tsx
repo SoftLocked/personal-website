@@ -7,14 +7,13 @@ interface MyComponentProps {
     skills: string[];
 }
 
-const ProjectCard: React.FC<MyComponentProps> = ({title, year, description, skills}) => {
+const ProjectCard: React.FC<MyComponentProps> = ({title, description, skills}) => {
     return ( 
         <div className="p-5 m-2">
             <div className="flex flex-row items-end justify-between">
-                <Typography variant="h5" style={{fontWeight: 700}} className="text-blue-600 md:text-inherit">{title}</Typography>
-                <Typography variant="h5" style={{fontWeight: 500}}>{year}</Typography>
+                <Typography variant="h4" style={{fontWeight: 700}} className="text-blue-600 md:text-inherit">{title}</Typography>
             </div>
-            <Typography variant="body1" style={{whiteSpace: 'pre-line'}}>{description}</Typography>
+            <Typography variant="h6" style={{whiteSpace: 'pre-line', fontWeight: 400}}>{description}</Typography>
             <div className="mt-2">
                 {skills.map((skill, index) => (
                     <Chip key={index} label={skill} className="mr-2 mb-2"/>

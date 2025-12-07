@@ -5,6 +5,13 @@ import ProjectCard from "./projectCard";
 const Projects = () => {
     const projects = [
         {
+            title: "Fukuzawa Labs: CHSH Game Simulator",
+            year: 2025,
+            description: "Contributed the singleplayer CHSH simulator allowing 100 students in UCI's quantum computing course to experimentally discover a CHSH strategy that breaks the bell inequality.",
+            link: "https://devpost.com/software/overboard-o09dem?_gl=1*19xl9l8*_gcl_au*MjA5OTgwNDAxNS4xNzQ0NDA2OTUw*_ga*ODYxOTM0MjU0LjE3NDQ0MDY5NTA.*_ga_0YHJK3Y10M*MTc0NDgyNDM3OS4xMi4xLjE3NDQ4MjUzNDQuMC4wLjA.",
+            skills: ["Next.js", "Vercel", "Supabase"]
+        },
+        {
             title: "Overboard",
             year: 2025,
             description: "🥇2025 UCI Datathon First Place! ($600 team earnings)\nShipwreck data collection and analysis to determine the existence of a shipwreck with high accuracy based on a coordinate input.",
@@ -21,7 +28,7 @@ const Projects = () => {
         {
             title: "Hottake Ranked",
             year: 2025,
-            description: "Web application to make custom hot takes and allow users to rank them against each other.",
+            description: "Web application to make custom hot takes and allow users to rank them against each other. Accumulated 500 users.",
             link: "https://hottake-ranked.harivardhineedi.com/",
             skills: ["Next.js", "Firebase", "Firestore"]
         },
@@ -31,13 +38,6 @@ const Projects = () => {
             description: "The source code for this website.",
             link: "https://github.com/SoftLocked/personal-website",
             skills: ["Next.js", "Vercel"]
-        },
-        {
-            title: "AI Tech Interviewer",
-            year: 2025,
-            description: "Technical interview platform with an LLM interviewer. Complete with feedback and improvement trends.",
-            link: "https://github.com/SoftLocked/Frontend-Live-Technical-Interview-Platform",
-            skills: ["Next.js", "Firebase", "OpenAI API"]
         },
         {
             title: "Custom Block Chain",
@@ -73,20 +73,6 @@ const Projects = () => {
             description: "Java Spring Boot API to interact over network with a Crumple Tree, a self-balancing binary search tree data structure.",
             link: "https://github.com/SoftLocked/CrumpleAPI",
             skills: ["Java", "Spring Boot"]
-        },
-        {
-            title: "ECR Law Firm Website",
-            year: 2022,
-            description: "Static web page built for Cohen Rothschild, PLLC with Bulma CSS.",
-            link: "https://github.com/SoftLocked/Cohen-Rothschilds",
-            skills: ["HTML", "CSS", "SCSS", "Bulma"]
-        },
-        {
-            title: "Niche Cloudware Website",
-            year: 2022,
-            description: "Static web page built for Niche Cloudware, LLC with Bulma CSS.",
-            link: "https://github.com/SoftLocked/Niche-Cloudware-Website",
-            skills: ["HTML", "CSS", "Bulma"]
         },
         {
             title: "Skill Surge Bot",
@@ -126,11 +112,20 @@ const Projects = () => {
                     ))}
                 </div>
             </div>
-            <div className="custom-shape-divider-bottom-1743408918">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" className="shape-fill"></path>
+            <div className="custom-shape-divider-bottom-1743409567">
+                <svg
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120"
+                    preserveAspectRatio="none"
+                >
+                    <path
+                        d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+                        className="shape-fill"
+                    ></path>
                 </svg>
             </div>
+            
         </React.Fragment>
     );
 }
